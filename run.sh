@@ -1,7 +1,9 @@
 #!/bin/sh
 set -e
-# Install deps when present (Tesseracs Python image has uv + venv on PATH)
+
+# Install deps only when the template actually needs them.
 if [ -f requirements.txt ] && [ -s requirements.txt ]; then
-  uv pip install -q -r requirements.txt
+  python -m pip install -q -r requirements.txt
 fi
-python main.py
+
+python -m app

@@ -1,1 +1,2 @@
-# Add pip dependencies here (one package per line). Leave empty if none.
+# Add pip dependencies here, one package per line.
+# This template intentionally runs on the Python standard library by default.

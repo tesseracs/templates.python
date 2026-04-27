@@ -1,11 +1,6 @@
-"""Tesseracs Python session starter — imports a sibling module."""
+"""Convenience entry point for local runs."""
 
-from greeting import Greeter
-
-
-def main() -> None:
-    g = Greeter("Tesseracs")
-    print(g.greet())
+from app.__main__ import main
 
 
 if __name__ == "__main__":
